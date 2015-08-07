@@ -11,3 +11,9 @@ Yes this will go around and around, hit CTL+C to stop the bus.
     git clone https://github.com/jonboylailam/outOfMemory.git
     cd outOfMemory
     ./startTest.sh
+
+## Highlights
+
+startTest.sh
+
+    java -Xmx10m -cp classes -XX:OnOutOfMemoryError="./restart.sh" TestOutOfMemory	
